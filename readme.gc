@@ -1,0 +1,17 @@
+项目介绍：
+
+NJBlog后台采用Nodejs+express来提供Restful API.
+数据库采用 Mongodb，通过Mongoose驱动。
+NJBlog前台采用AngularJs进行开发。
+NJBlog目前所有前端JS代码全部采用模块化编写，使用Requirejs驱动（将来可能考虑采用国产Seajs）。
+NJBlog使用mocha+jasmine来编写js单元测试。
+前端UI使用了bootstrap。
+NJBlog使用强大的grunt对项目进行构建工作。
+NJBlog全部代码托管在GitHub上，使用牛逼的travis-ci进行持续集成（可用来跑单元测试）。
+项目的demo由appfog和mongohq提供动力。
+
+功能：
+创建用户
+用户登录
+切换背景
+全屏显示

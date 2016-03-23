@@ -16,7 +16,8 @@ db.once('open', function () {
 
 var models_path = __dirname + '/../models/mapping'
 fs.readdirSync(models_path).forEach(function (file) {
-    require(models_path + '/' + file);
-    var modelName = file.replace('Model.js', '');
-    exports[modelName] = mongoose.model(modelName);
-});
+		if (file != '.svn') {
+		require(models_path + '/' + file);
+		var modelName = file.replace('Model.js', '');
+		exports[modelName] = mongoose.model(modelName);
+		}});
